@@ -1,0 +1,184 @@
+
+
+
+
+
+body {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "handlee", sans-serif;
+}
+
+
+div h1 {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.menu-note {
+    @include main-menu;
+    background-color: $background-note;
+      
+
+    .prix {
+        font-style: italic;
+    }
+}
+
+.Note {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "satisfy", sans-serif;
+
+    h2 {
+        font-size: 2.2em;
+        margin-top: 5px;
+    }
+}
+
+.fas {
+    background: linear-gradient(to right, $background-note-linear);
+    font-size: 3.5em;
+    @include background-clip1;
+    color: transparent;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+    @include suli;
+}
+
+
+
+header {
+    text-align: center;
+}
+
+
+.Prelude,
+.Mouvement_final,
+.Point_dorgue {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.trait {
+    width: 150px;
+    height: 5px;
+    background: black;
+
+}
+
+.Note2 {
+    display: flex;
+    justify-content: center;
+    font-family: "satisfy", sans-serif;
+    margin-top: 33px;
+
+    h3 {
+        font-size: 1.7em;
+        margin: 0px 5px 50px 0px;
+    }
+
+    .fas {
+        margin: 0px 5px 50px 0px;
+        font-size: 2.5em;
+    }
+}
+
+
+ul {
+    margin-top: 0px;
+    padding: 0px 20px 17px 20px;
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        line-height: 2em;
+
+        p {
+            margin: 0px;
+
+        }
+    }
+}
+
+span {
+    font-weight: bold;
+}
+
+@media screen and (max-width:700px) {
+    body {
+        display: flex;
+        align-items: unset;
+    }
+
+    .menu-note {
+        width: 100%;
+        height: 100%;
+        margin: 0px 0px 250px;
+        padding: 0px;
+    }
+
+
+    .logo img {
+        width: 69%;
+    }
+
+    .foot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;;
+    }
+
+    footer {
+        height: unset;
+        font-size: 1em;
+
+    }
+
+    ul {
+        text-align: center;
+        margin: auto;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            line-height: 2em;
+
+            p {
+                margin-left: 10px;
+
+            }
+        }
+    }
+
+    span {
+        font-size: 1.2em;
+
+
+    }
+
+    .trait {
+        width: 25%;
+        height: 1px;
+        background: black;
+
+    }
+
+    ul li {
+
+        display: flex;
+        padding: 12px;
+        flex-direction: column;
+        align-items: center;
+    }
+}

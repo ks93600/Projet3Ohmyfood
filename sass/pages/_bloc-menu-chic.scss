@@ -1,0 +1,232 @@
+
+
+body {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div h1 {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.chic-francaise{
+    @include main-menu;
+    background-color: $background-chic;
+    font-family:"jomolhari" ;
+
+
+    .prix {
+        font-style: italic;
+    }
+}
+
+.Chic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 52px;
+
+    h2 {
+        font-family: "jomolhari", sans-serif;
+        background: linear-gradient(to right, $background-chic-linear);
+        @include background-clip1;
+        color: transparent;
+        font-size: 2.2em;
+        margin-top: 10px;
+    }
+}
+
+
+
+.Appétit a {
+    text-decoration: none;
+    color: #E17907;
+    @include suli;
+}
+
+.Plaisir a {
+    text-decoration: none;
+    color: #9B58B7;
+    @include suli;
+}
+
+.Sucrées a{
+    text-decoration: none;
+    color: #9009E1;
+    @include suli;
+}
+
+
+
+
+
+
+.Appétit,
+.Plaisir,
+.Sucrées {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.Appétit {
+    color: #E17907;
+
+    &::before,
+    &::after {
+        content: '';
+        background: #E17907;
+        width: 150px;
+        height: 5px;
+
+
+    }
+}
+
+.Plaisir {
+    color: #9B58B7;
+
+    &::before,
+    &::after {
+        content: '';
+        background: #9B58B7;
+        width: 150px;
+        height: 5px;
+        ;
+
+    }
+}
+
+.Sucrées {
+    color: #9009E1;
+
+    &::before,
+    &::after {
+        content: '';
+        background: #9009E1;
+        width: 150px;
+        height: 5px;
+    }
+}
+
+h3 {
+    margin: 10px;
+}
+
+ul {
+    margin-top: 0px;
+    padding: 0px 20px 30px 20px;
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        line-height: 2em;
+
+        p {
+            margin: 0px;
+
+        }
+    }
+}
+
+.orange {
+    color: #E17907;
+}
+
+.violet {
+    color: #9B58B7;
+}
+
+.violet2 {
+    color: #9009E1;
+    padding-bottom: 70px;
+}
+
+
+@media screen and (max-width:700px) {
+    body {
+        display: flex;
+        align-items: unset;
+    }
+
+    .chic-francaise {
+        width: 100%;
+        height: 100%;
+        margin: 0px 0px 250px;
+        padding: 0px;
+    }
+
+
+    .logo img {
+        width: 69%;
+    }
+
+    .foot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        height: unset;
+        font-size: 1em;
+    }
+
+    ul {
+        text-align: center;
+        margin: auto;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            line-height: 2em;
+
+            p {
+                margin-left: 10px;
+
+            }
+        }
+    }
+
+    span {
+        font-size: 1.1em;
+
+
+    }
+
+    .trait {
+        width: 100%;
+        height: 1px;
+        background: black;
+
+    }
+
+    ul li {
+
+        display: flex;
+        padding: 12px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Chic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 52px;
+
+        h2 {
+            font-family: "jomolhari", sans-serif;
+            background: linear-gradient(to right, $background-chic-linear);
+            @include background-clip1;
+            color: transparent;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+    }
+}

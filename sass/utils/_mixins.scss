@@ -1,0 +1,42 @@
+// mixin
+
+// mixin menu principale
+
+@mixin bloc {
+    width: $width-bloc;
+    height: $height-bloc;
+    display: flex;
+    margin: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: $box-shadow;
+}
+
+// mixin menu secondaire 
+
+@mixin main-menu {
+    width: 600Px;
+    height: 800px;
+    padding: 2%;
+    margin: 0px 80px 120px 80px;
+    box-shadow: 10px 5px 20px #a0a0a0;
+}
+
+
+
+
+@mixin background-clip1 {
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+}
+
+@mixin suli {
+    -webkit-any-link: text;
+    -moz-any-link: text;
+    -o-any-link:text;
+    
+}
+
+

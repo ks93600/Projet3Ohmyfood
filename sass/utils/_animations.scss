@@ -1,0 +1,60 @@
+
+// animation point susp
+
+.un {
+    opacity: 0;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-name: point;
+    animation-iteration-count: infinite;
+}
+
+ .deux {
+    opacity: 0;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-name: point;
+    animation-iteration-count: infinite;
+
+}
+
+ .trois{
+    opacity: 0;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-name: point;
+    animation-iteration-count:infinite;
+}
+
+//animation zoom menu
+
+.zoom {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 200ms ease-in;
+
+    &:hover {
+        opacity: 0.4;
+        transform: scale(1.13);
+        transition: all 200ms ease-in;
+    }
+}
+
+//animation surlignement
+
+h3{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    :after {
+    content: ('');
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0px;
+    height: 2px;
+    background: black;
+    transition: width 500ms ease;}
+     :hover:after {
+     width: 100%;
+}}

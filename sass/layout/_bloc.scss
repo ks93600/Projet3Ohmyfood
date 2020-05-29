@@ -1,0 +1,113 @@
+body {
+    margin: auto;
+    max-width: 1400px;
+}
+
+.Menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .bloc1,
+    .bloc2,
+    .bloc3,
+    .bloc4 {
+        @include bloc;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+.bloc1 {
+    background-color: $background-note;
+
+    h1 {
+        font-family: "Satisfy", sans-serif;
+        font-size: 1.4em;
+        color: black;
+        margin-top: 2px;
+    }
+
+    p {
+        font-family: "handlee", sans-serif;
+        font-size: 2rem;
+        color: black;
+        margin-top: 2px;
+
+    }
+
+}
+
+
+.bloc2 {
+    background-color: $background-chic;
+
+    h1 {
+        font-family: "jomolhari", sans-serif;
+        font-size: 1.4em;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        background: linear-gradient(to right, $background-chic-linear);
+        @include background-clip1;
+        color: transparent;
+    }
+
+    p {
+        font-family: "jomolhari", sans-serif;
+        font-size: 2rem;
+        color: #E17907;
+        margin-top: 2px;
+    }
+}
+
+.bloc3 {
+    background-color: $background-delice;
+
+    h1 {
+        font-family: "dancing", sans-serif;
+        font-size: 1.7em;
+        margin-top: 2px;
+        background: linear-gradient(to right, $background-delice-linear);
+        @include background-clip1;
+        color: transparent;
+    }
+
+    p {
+        font-family: "handlee", sans-serif;
+        font-size: 2rem;
+        color: #028AE1;
+        margin-top: 2px;
+    }
+}
+
+.bloc4 {
+    background-color: $background-palette;
+
+    h1 {
+        font-family: "kaushan", sans-serif;
+        font-size: 1.7em;
+        margin-top: 2px;
+        background: linear-gradient(to right, $background-palette-linear);
+        @include background-clip1;
+        color: transparent;
+    }
+
+    p {
+        font-family: "handlee", sans-serif;
+        font-size: 2rem;
+        color: #0C9C00;
+        margin-top: 2px;
+    }
+}
+
+
+
+.fas {
+    background: linear-gradient(to right, $background-note-linear);
+    font-size: 2.6em;
+    @include background-clip1;
+    color: transparent;
+
+}
