@@ -18,19 +18,6 @@ footer {
   width: 100%;
   font-size: 1.8em; }
 
-.foot {
-  display: flex;
-  justify-content: space-around;
-  width: 100%; }
-  .foot p {
-    animation-name: shake;
-    animation-duration: 0.8s;
-    animation-iteration-count: infinite; }
-    .foot p a {
-      color: #FDC100;
-      text-decoration: none;
-      font-family: helvetica, sans-serif; }
-
 body {
   margin: auto;
   max-width: 1400px; }
@@ -204,6 +191,19 @@ h3 {
     transition: width 500ms ease; }
   h3 :hover:after {
     width: 100%; }
+
+.foot {
+  display: flex;
+  justify-content: space-around;
+  width: 100%; }
+  .foot p {
+    animation-name: shake;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite; }
+    .foot p a {
+      color: #FDC100;
+      text-decoration: none;
+      font-family: helvetica, sans-serif; }
 
 @keyframes point {
   0% {
