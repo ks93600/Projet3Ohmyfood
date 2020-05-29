@@ -58,3 +58,23 @@ h3{
      :hover:after {
      width: 100%;
 }}
+
+//animation shake foot
+
+.foot {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    p {
+        animation-name: shake;
+        animation-duration: 0.8s;
+        animation-iteration-count: infinite;
+
+        a {
+            color: $foot-color;
+            text-decoration: none;
+            font-family: helvetica, sans-serif;
+        }
+    }
+}
